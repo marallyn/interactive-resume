@@ -21,7 +21,7 @@ export const resumeData = {
     },
     {
       name: "JavaScript",
-      versions: ["ES6+", "TypeScript", "React", "Redux"],
+      versions: [],
       description:
         "My digital paintbrush for crafting dynamic and interactive user interfaces.",
       relatedExperienceIds: ["rsc", "arctic", "dsrwp", "mdo", "drink-gifter"],
@@ -38,7 +38,7 @@ export const resumeData = {
       versions: ["Scripting", "Automation"],
       description:
         "My trusty sidekick for automating tasks and making the command line my playground.",
-      relatedExperienceIds: ["rsc", "arctic", "dsrwp", "mdo", "drink-gifter"],
+      relatedExperienceIds: ["rsc", "arctic", "dsrwp", "mdo"],
     },
     {
       name: "Golang",
@@ -47,15 +47,15 @@ export const resumeData = {
         "Building robust and scalable backend services that run faster than a startled deer.",
       relatedExperienceIds: ["rsc"],
     },
-    {
-      name: "TypeScript",
-      versions: ["Strong Typing", "Scalability"],
-      description:
-        "Bringing type safety and clarity to JavaScript, making my code less prone to unexpected surprises.",
-    },
+    // {
+    //   name: "TypeScript",
+    //   versions: [],
+    //   description:
+    //     "Bringing type safety and clarity to JavaScript, making my code less prone to unexpected surprises.",
+    // },
     {
       name: "Python",
-      versions: ["Flask", "AI/LLMs (AirBuddy)", "Data Wrangling"],
+      versions: [],
       description:
         "My go-to for backend logic, data analysis, and whipping up intelligent tools like AirBuddy.",
       relatedExperienceIds: ["air-buddy"],
@@ -65,7 +65,7 @@ export const resumeData = {
       versions: ["Class-based to Functional Components", "SPA", "Redux"],
       description:
         "Building responsive and engaging front-end experiences, one component at a time.",
-      relatedExperienceIds: ["rsc", "arctic"],
+      relatedExperienceIds: ["rsc", "arctic", "resume"],
     },
     {
       name: "Redux",
@@ -94,6 +94,13 @@ export const resumeData = {
       relatedExperienceIds: ["arctic"],
     },
     {
+      name: "Flask",
+      versions: [],
+      description:
+        "I have only used python in personal projects and in those personal projects that require a frontend, I use Flask.",
+      relatedExperienceIds: ["air-buddy"],
+    },
+    {
       name: "Bootstrap",
       versions: ["4", "5"],
       description:
@@ -104,17 +111,18 @@ export const resumeData = {
       name: "Tailwind",
       description:
         "No professional work experience. I use Tailwind for personal projects like this one.",
+      relatedExperienceIds: ["resume"],
     },
     {
       name: "Doctrine ORM",
       versions: ["Object-Relational Mapping"],
       description:
         "Translating database interactions into object-oriented code, making data access a breeze.",
-      relatedExperienceIds: [],
+      relatedExperienceIds: ["rsc"],
     },
     {
-      name: "Ubuntu Linux",
-      versions: ["14 - 24"],
+      name: "Linux",
+      versions: ["Ubuntu 14 - Ubuntu 24"],
       description: "My preferred operating system for development.",
       relatedExperienceIds: [
         "rsc",
@@ -123,6 +131,7 @@ export const resumeData = {
         "mdo",
         "drink-gifter",
         "air-buddy",
+        "resume",
       ],
     },
     {
@@ -150,18 +159,18 @@ export const resumeData = {
       versions: [],
       description:
         "Exploring Google's cloud ecosystem for various infrastructure needs.",
-      relatedExperienceIds: [],
+      relatedExperienceIds: ["air-buddy", "resume"],
     },
     {
-      name: "Git / GitHub",
+      name: "Git",
       description: "My version control system of choice.",
       relatedExperienceIds: [
         "rsc",
         "arctic",
         "dsrwp",
         "mdo",
-        "drink-gifter",
         "air-buddy",
+        "resume",
       ],
     },
     {
@@ -169,7 +178,7 @@ export const resumeData = {
       versions: ["Automated Workflows"],
       description:
         "Automating builds, tests, and deployments directly from my GitHub repositories.",
-      relatedExperienceIds: ["rsc", "air-buddy"],
+      relatedExperienceIds: ["rsc", "air-buddy", "resume"],
     },
     {
       name: "Jira",
@@ -193,19 +202,19 @@ export const resumeData = {
     {
       name: "phpMyAdmin",
       description: "Managing MySQL databases with a user-friendly interface.",
-      relatedExperienceIds: [],
+      relatedExperienceIds: ["rsc", "arctic", "dsrwp", "mdo", "drink-gifter"],
     },
     {
       name: "Gemini",
-      versions: ["Gemini API"],
+      versions: [],
       description:
-        "Leveraging Google's Gemini API for cutting-edge AI integrations and workflow automations.",
+        "Gemini is the LLM that I pay for, so I use it for many tasks. The most common way I use it is to identify a task that can benefit from an LLM, refine a master prompt for that task, turn that master propmpt into a new gem.",
       relatedExperienceIds: ["rsc", "air-buddy"],
     },
     {
       name: "Gemini API",
       description:
-        "Leveraging Google's Gemini API for cutting-edge AI integrations and workflow automations.",
+        "The most common use case for me with Gemini is the Gemini website, but I will occasionally have a use case where using the API makes more sense. In these cases I have used the google.genai python module.",
       relatedExperienceIds: ["air-buddy"],
     },
     {
@@ -253,9 +262,9 @@ export const resumeData = {
     },
     {
       name: "API Integration",
-      versions: ["Third-Party Services (Zoho, Zendesk, Salesforce, HubSpot)"],
+      versions: [],
       description:
-        "Seamlessly connecting different systems to create cohesive and powerful applications.",
+        "Connected applications to third party services using API documentation and in some cases an SDK. Third party services included: various Google services, Zoho Books, Zoho Desk, Zendesk, Salesforce, HubSpot, PayPal, Facebook etc",
       relatedExperienceIds: [
         "rsc",
         "dsrwp",
@@ -281,7 +290,7 @@ export const resumeData = {
       name: "Prompt Engineering",
       description:
         "Crafting the perfect prompts to get the best responses from large language models – it's an art!",
-      relatedExperienceIds: ["rsc"],
+      relatedExperienceIds: ["rsc", "air-buddy"],
     },
     {
       name: "Retrieval-Augmented Generation (RAG)",
@@ -290,11 +299,11 @@ export const resumeData = {
         "Combining information retrieval with generative AI for smarter, more context-aware solutions.",
       relatedExperienceIds: ["air-buddy"],
     },
-    {
-      name: "wit.ai",
-      description:
-        "Integrating natural language processing to build intelligent conversational interfaces.",
-    },
+    // {
+    //   name: "wit.ai",
+    //   description:
+    //     "Integrating natural language processing to build intelligent conversational interfaces.",
+    // },
   ],
 
   experiences: [
@@ -334,33 +343,36 @@ export const resumeData = {
       ],
       skillsUsed: [
         "PHP",
+        "Laminas",
+        "Doctrine ORM",
         "JavaScript",
         "React",
         "Redux",
-        "Golang",
         "MySQL",
+        "Bootstrap",
+        "Golang",
         "AWS",
         "Docker",
-
+        "Linux",
+        "Bash",
+        "Symfony",
+        "Airbrake",
+        "phpMyAdmin",
         "Debugging & Root Cause Analysis",
         "CI/CD",
-        "GitHub",
+        "Git",
         "GitHub Actions",
         "Legacy Code Refactoring",
         "API Integration",
-        "Zoho",
-        "Zendesk",
-        "Salesforce",
-        "HubSpot",
-        "Database Optimization",
         "Mentoring",
         "Code Review",
         "Pair Programming",
         "Jira",
         "Slack",
         "Full-Stack Development",
-        "E-commerce Platforms",
-        "System Architecture",
+        "Gemini",
+        "Prompt Engineering",
+        "Figma",
       ],
     },
     {
@@ -377,9 +389,17 @@ export const resumeData = {
       skillsUsed: [
         "React",
         "JavaScript",
+        "PHP",
         "Laravel",
         "MySQL",
+        "Bootstrap",
+        "Bash",
+        "Linux",
+        "Docker",
+        "Git",
+        "phpMyAdmin",
         "Full-Stack Development",
+        "Debugging & Root Cause Analysis",
       ],
     },
     {
@@ -399,10 +419,13 @@ export const resumeData = {
         "JavaScript",
         "PHP",
         "MySQL",
-        "E-commerce Platforms",
-        "System Architecture",
-        "Automation",
+        "Bash",
+        "Linux",
+        "Git",
+        "API Integration",
+        "phpMyAdmin",
         "Full-Stack Development",
+        "Debugging & Root Cause Analysis",
       ],
     },
     {
@@ -420,10 +443,13 @@ export const resumeData = {
         "JavaScript",
         "PHP",
         "MySQL",
-        "E-commerce Platforms",
-        "System Architecture",
-        "Automation",
+        "Bash",
+        "Linux",
+        "Git",
+        "API Integration",
+        "phpMyAdmin",
         "Full-Stack Development",
+        "Debugging & Root Cause Analysis",
       ],
     },
     {
@@ -436,7 +462,16 @@ export const resumeData = {
         "Implemented the design of a Facebook App from customer design.",
         "Utilized PayPal micro payment API to track customer deposits, balances and payments.",
       ],
-      skillsUsed: ["JavaScript", "PHP", "API Integration"],
+      skillsUsed: [
+        "JavaScript",
+        "PHP",
+        "MySQL",
+        "API Integration",
+        "Linux",
+        "phpMyAdmin",
+        "Debugging & Root Cause Analysis",
+        "Full-Stack Development",
+      ],
     },
     {
       id: "air-buddy",
@@ -450,12 +485,37 @@ export const resumeData = {
       skillsUsed: [
         "Python",
         "Flask",
-        "AI & LLMs",
         "Prompt Engineering",
         "Retrieval-Augmented Generation (RAG)",
         "Gemini",
+        "Gemini API",
+        "API Integration",
         "Airbrake",
+        "Linux",
+        "Git",
+        "GitHub Actions",
+        "Google Cloud Platform",
         "Debugging & Root Cause Analysis",
+        "Full-Stack Development",
+      ],
+    },
+    {
+      id: "resume",
+      title: "Interactive resume",
+      years: "2025",
+      level: "personal",
+      responsibilities: [
+        "Developed an interactive resume application.",
+        "The application reads a json file of resume data and displays it in an interactive website.",
+        "Users can click on skills and experiences to get more detailed information about them.",
+      ],
+      skillsUsed: [
+        "React",
+        "GitHub Actions",
+        "Google Cloud Platform",
+        "Tailwind",
+        "Linux",
+        "Git",
       ],
     },
   ],
