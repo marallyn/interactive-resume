@@ -31,7 +31,7 @@ const ExperienceDetail = ({ experience }) => {
              
             `}
     >
-      {experience.title && (
+      {experience.title && !experience.titles && (
         <h3 className="text-2xl font-semibold text-blue-700 mb-1">
           {experience.title}
         </h3>

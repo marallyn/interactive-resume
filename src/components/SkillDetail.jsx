@@ -32,13 +32,21 @@ const SkillDetail = ({ skill }) => {
       <h3 className="text-2xl font-semibold text-indigo-800 mb-3">
         {skill.name} Details
       </h3>
-      {skill.versions && skill.versions.length > 0 && (
+      {skill.years.value > 0 && (
+        <p className="text-gray-700 mb-2">
+          <strong className="text-indigo-600">Years of experience:</strong>
+          {` ${skill.years.label}`}
+        </p>
+      )}
+      {skill.versions?.length > 0 && (
         <p className="text-gray-700 mb-2">
           <strong className="text-indigo-600">Versions:</strong>{" "}
           {skill.versions?.join(", ")}
         </p>
       )}
-      <p className="text-gray-700 leading-relaxed">{skill.description}</p>
+      {skill.description && (
+        <p className="text-gray-700 leading-relaxed">{skill.description}</p>
+      )}
       {relatedExperiences.length > 0 && (
         <>
           <h4 className="text-xl font-semibold text-indigo-700 mt-4 mb-2">

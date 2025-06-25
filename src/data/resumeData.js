@@ -15,6 +15,7 @@ export const resumeData = {
     {
       name: "PHP",
       versions: ["7.4", "8.3"],
+      years: { start: 1996, end: null },
       description:
         "Seasoned in PHP, with a knack for modernizing legacy systems and making old code sing a new tune.",
       relatedExperienceIds: ["rsc", "arctic", "dsrwp", "mdo", "drink-gifter"],
@@ -22,6 +23,7 @@ export const resumeData = {
     {
       name: "JavaScript",
       versions: [],
+      years: { start: 1996, end: null },
       description:
         "My digital paintbrush for crafting dynamic and interactive user interfaces.",
       relatedExperienceIds: ["rsc", "arctic", "dsrwp", "mdo", "drink-gifter"],
@@ -29,22 +31,25 @@ export const resumeData = {
     {
       name: "MySQL",
       versions: ["5.x", "8"],
+      years: { start: 1996, end: null },
       description:
         "Fluent in the language of databases, making queries perform like they've had a triple espresso.",
       relatedExperienceIds: ["rsc", "arctic", "dsrwp", "mdo", "drink-gifter"],
     },
     {
       name: "Bash",
-      versions: ["Scripting", "Automation"],
+      versions: [],
+      years: { start: 1996, end: null },
       description:
         "My trusty sidekick for automating tasks and making the command line my playground.",
       relatedExperienceIds: ["rsc", "arctic", "dsrwp", "mdo"],
     },
     {
       name: "Golang",
-      versions: ["Microservices", "AWS Services (SQS, ECS, ECR, EC2)"],
+      versions: ["1.18 - 1.24"],
+      years: { start: 2020, end: 2025 },
       description:
-        "Building robust and scalable backend services that run faster than a startled deer.",
+        "We had a couple services written in Go while I was at Research Square, but the primary application was written in PHP",
       relatedExperienceIds: ["rsc"],
     },
     // {
@@ -56,73 +61,84 @@ export const resumeData = {
     {
       name: "Python",
       versions: [],
+      years: { start: 2025, end: 2025 },
       description:
-        "My go-to for backend logic, data analysis, and whipping up intelligent tools like AirBuddy.",
+        "I primarily use Python for one-off scripts to keep my skills sharp. AirBuddy was my first project where I used Python for more than a CLI tool.",
       relatedExperienceIds: ["air-buddy"],
     },
     {
       name: "React",
-      versions: ["Class-based to Functional Components", "SPA", "Redux"],
+      versions: ["15 - 19"],
+      years: { start: 2019, end: null },
       description:
-        "Building responsive and engaging front-end experiences, one component at a time.",
+        "Definitely my favorite frontend library. I've used it with webpack, create-react-app and vite.",
       relatedExperienceIds: ["rsc", "arctic", "resume"],
     },
     {
       name: "Redux",
-      versions: ["State Management"],
+      versions: [],
+      years: { start: 2020, end: 2024 },
       description:
-        "Keeping complex application states tidy and predictable, so I don't lose my mind (or my data).",
+        "I didn't like it at first, and the learning curve was a little rough. I don't use it personal projects in favor of React's useContext and useReducer hooks.",
       relatedExperienceIds: ["rsc"],
     },
     {
       name: "Laminas",
       versions: [],
-      description: "A robust PHP framework I've wrangled for various projects.",
+      years: { start: 2020, end: 2024 },
+      description:
+        "Laminas is the new name for the old Zend framework. Definitely not my first choice for frameworks, and I would never choose to work with it again on purpose. Switching from the enormous community and robust documentation of Laravel to Laminas was nothing short of a nightmare.",
       relatedExperienceIds: ["rsc"],
     },
     {
       name: "Symfony",
       versions: [],
-      description: "Another powerful PHP framework in my toolkit.",
+      years: { start: 2022, end: 2024 },
+      description:
+        "I've used Symfony for a couple personal REST API projects. My professional experience is limited to Symfony Console applications.",
       relatedExperienceIds: ["rsc"],
     },
     {
       name: "Laravel",
       versions: ["5", "6", "7"],
+      years: { start: 2019, end: 2020 },
       description:
-        "Building elegant and efficient backend APIs with this popular PHP framework.",
+        "All of my PHP experience before working on Arctic Coliseum was with a personal framework that I developed over time.",
       relatedExperienceIds: ["arctic"],
     },
     {
       name: "Flask",
       versions: [],
+      years: { start: 2025, end: 2025 },
       description:
-        "I have only used python in personal projects and in those personal projects that require a frontend, I use Flask.",
+        "I have only used python in personal projects. If the project requires a frontend, I use Flask.",
       relatedExperienceIds: ["air-buddy"],
     },
     {
       name: "Bootstrap",
       versions: ["4", "5"],
+      years: { start: 2019, end: 2025 },
       description:
-        "Quickly creating responsive and stylish layouts without reinventing the wheel.",
+        "Before using Bootstrap, all of my projects were hand rolled CSS solutions. Switching to Bootstrap made a huge difference in the UX fo my work.",
       relatedExperienceIds: ["rsc", "arctic"],
     },
     {
       name: "Tailwind",
+      years: { start: 2025, end: 2025 },
       description:
-        "No professional work experience. I use Tailwind for personal projects like this one.",
+        "I don't have professional work experience with Tailwind, but I use it for personal projects like this one. Not sure if I love it yet.",
       relatedExperienceIds: ["resume"],
     },
     {
       name: "Doctrine ORM",
-      versions: ["Object-Relational Mapping"],
-      description:
-        "Translating database interactions into object-oriented code, making data access a breeze.",
+      versions: [],
+      years: { start: 2020, end: 2024 },
       relatedExperienceIds: ["rsc"],
     },
     {
       name: "Linux",
       versions: ["Ubuntu 14 - Ubuntu 24"],
+      years: { start: 2003, end: null },
       description: "My preferred operating system for development.",
       relatedExperienceIds: [
         "rsc",
@@ -136,20 +152,23 @@ export const resumeData = {
     },
     {
       name: "Docker",
+      years: { start: 2019, end: null },
       description:
         "Packaging applications and their dependencies into portable containers, so they run anywhere, anytime.",
       relatedExperienceIds: ["rsc", "arctic"],
     },
     {
       name: "AWS",
-      versions: ["SQS", "ECS", "ECR", "CloudWatch", "Route53", "EC2"],
+      versions: [],
+      years: { start: 2020, end: 2024 },
       description:
-        "Navigating the Amazon Web Services jungle to deploy scalable and reliable cloud solutions.",
+        "At Research Square we had SRE's but we were expected to make a lot of the required changes to AWS ourselves. Plus, it was much faster than waiting for a Jira ticket to flow through their system. Some of the AWS services I've used are: SQS, ECS, ECR, CloudWatch, and Route53.",
       relatedExperienceIds: ["rsc"],
     },
     {
       name: "CI/CD",
       versions: ["GitHub Actions"],
+      years: { start: 2020, end: null },
       description:
         "Setting up automated pipelines for continuous integration and continuous delivery, making deployments less of a white-knuckle ride.",
       relatedExperienceIds: ["rsc"],
@@ -157,12 +176,14 @@ export const resumeData = {
     {
       name: "Google Cloud Platform",
       versions: [],
+      years: { start: 2025, end: null },
       description:
         "Exploring Google's cloud ecosystem for various infrastructure needs.",
       relatedExperienceIds: ["air-buddy", "resume"],
     },
     {
       name: "Git",
+      years: { start: 2005, end: null },
       description: "My version control system of choice.",
       relatedExperienceIds: [
         "rsc",
@@ -176,73 +197,85 @@ export const resumeData = {
     {
       name: "GitHub Actions",
       versions: ["Automated Workflows"],
+      years: { start: 2020, end: null },
       description:
         "Automating builds, tests, and deployments directly from my GitHub repositories.",
       relatedExperienceIds: ["rsc", "air-buddy", "resume"],
     },
     {
       name: "Jira",
+      years: { start: 2020, end: 2024 },
       description:
         "Keeping projects on track and tasks organized, because chaos is for abstract art, not software.",
       relatedExperienceIds: ["rsc"],
     },
     {
       name: "Slack",
+      years: { start: 2020, end: 2023 },
       description:
-        "Staying connected and collaborative with remote teams, one channel at a time.",
+        "I really liked using Slack. Like most things, I didn't appreciate it as much as I should have, and really missed it when we switched to Teams.",
       relatedExperienceIds: ["rsc"],
     },
     {
       name: "Airbrake",
-      versions: ["Error Tracking"],
+      versions: [],
+      years: { start: 2020, end: 2025 },
       description:
         "Catching bugs before they bite, ensuring my applications stay healthy.",
       relatedExperienceIds: ["rsc", "air-buddy"],
     },
     {
       name: "phpMyAdmin",
+      years: { start: 2000, end: null },
       description: "Managing MySQL databases with a user-friendly interface.",
       relatedExperienceIds: ["rsc", "arctic", "dsrwp", "mdo", "drink-gifter"],
     },
     {
       name: "Gemini",
       versions: [],
+      years: { start: 2024, end: null },
       description:
         "Gemini is the LLM that I pay for, so I use it for many tasks. The most common way I use it is to identify a task that can benefit from an LLM, refine a master prompt for that task, turn that master propmpt into a new gem.",
       relatedExperienceIds: ["rsc", "air-buddy"],
     },
     {
       name: "Gemini API",
+      years: { start: 2025, end: null },
       description:
         "The most common use case for me with Gemini is the Gemini website, but I will occasionally have a use case where using the API makes more sense. In these cases I have used the google.genai python module.",
       relatedExperienceIds: ["air-buddy"],
     },
     {
       name: "Figma",
+      years: { start: 2023, end: 2024 },
       description:
         "Collaborating with designers to translate beautiful mockups into functional UIs.",
       relatedExperienceIds: ["rsc"],
     },
     {
       name: "Mentoring",
+      years: { start: 2022, end: 2025 },
       description:
         "Guiding the next generation of engineers, sharing knowledge, and helping them avoid my past debugging nightmares.",
       relatedExperienceIds: ["rsc"],
     },
     {
       name: "Code Review",
+      years: { start: 2021, end: 2025 },
       description:
         "Polishing code, catching potential issues, and ensuring maintainable, high-quality solutions.",
       relatedExperienceIds: ["rsc"],
     },
     {
       name: "Pair Programming",
+      years: { start: 2024, end: 2025 },
       description:
         "Tackling complex challenges side-by-side, two minds are always better than one (especially when one's thinking about pizza).",
       relatedExperienceIds: ["rsc"],
     },
     {
       name: "Full-Stack Development",
+      years: { start: 1996, end: null },
       description:
         "Building complete applications from the database to the user interface, no stone left unturned.",
       relatedExperienceIds: [
@@ -256,6 +289,7 @@ export const resumeData = {
     },
     {
       name: "Legacy Code Refactoring",
+      years: { start: 2019, end: null },
       description:
         "Breathing new life into old code, making it more secure, performant, and delightful to work with.",
       relatedExperienceIds: ["rsc"],
@@ -263,6 +297,7 @@ export const resumeData = {
     {
       name: "API Integration",
       versions: [],
+      years: { start: 2008, end: null },
       description:
         "Connected applications to third party services using API documentation and in some cases an SDK. Third party services included: various Google services, Zoho Books, Zoho Desk, Zendesk, Salesforce, HubSpot, PayPal, Facebook etc",
       relatedExperienceIds: [
@@ -275,6 +310,7 @@ export const resumeData = {
     },
     {
       name: "Debugging & Root Cause Analysis",
+      years: { start: 2008, end: null },
       description:
         "My detective hat comes on when bugs appear, tracking them down and eradicating them with methodical precision.",
       relatedExperienceIds: [
@@ -288,13 +324,15 @@ export const resumeData = {
     },
     {
       name: "Prompt Engineering",
+      years: { start: 2024, end: null },
       description:
         "Crafting the perfect prompts to get the best responses from large language models – it's an art!",
       relatedExperienceIds: ["rsc", "air-buddy"],
     },
     {
       name: "Retrieval-Augmented Generation (RAG)",
-      versions: ["AI-Powered Tools"],
+      versions: [],
+      years: { start: 2025, end: null },
       description:
         "Combining information retrieval with generative AI for smarter, more context-aware solutions.",
       relatedExperienceIds: ["air-buddy"],
@@ -309,6 +347,7 @@ export const resumeData = {
   experiences: [
     {
       id: "rsc",
+      title: "Senior Software Engineer",
       titles: [
         {
           title: "Senior Software Engineer / Technical Lead",
