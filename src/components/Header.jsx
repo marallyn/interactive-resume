@@ -12,12 +12,8 @@ const Header = () => {
 
   return (
     <header className="py-8 px-6 bg-gray-50 text-gray-800 rounded-lg shadow-md mb-8">
-      <h1 className="text-4xl font-extrabold text-left text-red-200 mb-2">
-        {name}
-      </h1>
-      <h1 className="text-4xl font-extrabold text-left text-red-500 mb-2">
-        {title}
-      </h1>
+      <h1 className="text-4xl font-extrabold text-left mb-2">{name}</h1>
+      <h1 className="text-4xl font-extrabold text-left mb-2">{title}</h1>
       {/* <h2 className="text-2xl font-semibold text-center text-gray-600 mb-4"></h2> */}
       <div className="flex flex-wrap  gap-4 text-gray-700 text-sm">
         {/* <div className="flex flex-wrap justify-center gap-4 text-gray-700 text-sm"> */}

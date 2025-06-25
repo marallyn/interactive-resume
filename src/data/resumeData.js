@@ -526,6 +526,9 @@ export const resumeData = {
       institution: "California Institute of Technology",
       url: "https://caltech.edu",
       years: "",
+      note: "I unfortunately did not accomplish any noteworthy academic achievements during my time at Caltech, but I did set the school record in the javelin throw.",
+      courseWork:
+        "In addition to the rigorous math, physics and chemistry requirements, my coursework included: Algorithms, VLSI Design,  ",
     },
   ],
 };

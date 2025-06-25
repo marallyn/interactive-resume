@@ -2,7 +2,6 @@ import { useCallback, useContext } from "react";
 import { DispatchContext, StateContext } from "../context/Contexts";
 import SkillItem from "./SkillItem";
 import c from "../context/constants";
-import SkillDetail from "./SkillDetail";
 
 const Skills = () => {
   const dispatch = useContext(DispatchContext);
@@ -28,14 +27,13 @@ const Skills = () => {
           click a skill to see details
         </span>
       </h2>
-      <SkillDetail />
       <div className="flex flex-wrap justify-center sm:justify-start -m-1">
         {skills.map((skill) => (
           <SkillItem
             key={skill.name}
             skill={skill}
             onClick={handleSkillClick}
-            isActive={skill.name === selectedSkill}
+            selectedSkill={selectedSkill}
           />
         ))}
       </div>

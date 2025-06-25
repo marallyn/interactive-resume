@@ -1,11 +1,30 @@
-import { useContext } from "react";
-import { StateContext } from "../context/Contexts";
+import { useCallback, useContext } from "react";
+
+import c from "../context/constants";
+import { DispatchContext, StateContext } from "../context/Contexts";
+import { slugify } from "../utils/string";
 
 const ExperienceDetail = ({ experience }) => {
   const { selectedExperience } = useContext(StateContext);
+  const dispatch = useContext(DispatchContext);
+
+  // const { resumeData, selectedSkill } = useContext(StateContext);
+  // const skills = resumeData?.skills || null;
+
+  const handleSkillClick = useCallback(
+    (skillName) => {
+      dispatch({ type: c.SELECT_SKILL, payload: skillName });
+    },
+    [dispatch]
+  );
+
+  // if (!skills || !dispatch) {
+  //   return null;
+  // }
+
   return (
     <div
-      id={`experience-${experience.id}`} // Important for internal linking
+      id={slugify(`experience-${experience.id}`)} // Important for internal linking
       className={`
               p-5 border border-gray-200 rounded-lg transition-all duration-300
               ${selectedExperience === experience.id ? "bg-blue-50 shadow-lg ring-2 ring-blue-400" : "bg-gray-50 hover:shadow-md"}
@@ -39,13 +58,15 @@ const ExperienceDetail = ({ experience }) => {
         <div className="mt-3">
           <p className="text-sm text-gray-600 font-medium">Skills Used:</p>
           <div className="flex flex-wrap gap-2 mt-1">
-            {experience.skillsUsed.map((skill) => (
-              <span
-                key={skill}
-                className="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded-full"
+            {experience.skillsUsed.map((skillName) => (
+              <a
+                key={skillName}
+                href={`#${slugify(`skill-${skillName}`)}`}
+                onClick={() => handleSkillClick(skillName)}
+                className="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded-full hover:bg-indigo-200"
               >
-                {skill}
-              </span>
+                {skillName}
+              </a>
             ))}
           </div>
         </div>

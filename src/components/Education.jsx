@@ -34,6 +34,7 @@ const Education = () => {
             </p>
 
             {edu.years && <p className="text-sm text-gray-600">{edu.years}</p>}
+            {edu.note && <p className="text-sm text-gray-600">{edu.note}</p>}
           </div>
         ))}
       </div>
