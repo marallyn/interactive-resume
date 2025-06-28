@@ -362,7 +362,7 @@ export const resumeData = {
           years: "Jul 2020 - Jul 2021",
         },
       ],
-      company: "AJE a division of MPS North America",
+      company: "Research Square / AJE a division of MPS North America",
       years: "Jul 2020 - May 2025",
       level: "professional",
       responsibilities: [
